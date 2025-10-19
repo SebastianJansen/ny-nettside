@@ -1,0 +1,108 @@
+:root{
+  --overlay: rgba(255,255,255,0.85); 
+  --accent: #1b3350; 
+  --title-size: 3.2rem;
+  --body-font: "Georgia", serif;
+  --ui-font: "Trebuchet MS", Arial, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+html,body{
+  height:100%;
+}
+
+body{
+  font-family: var(--ui-font);
+  background: url("https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687") center top/cover no-repeat fixed;
+  color: var(--accent);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display:flex;
+  justify-content:center;
+}
+
+.page {
+  width: 420px;            
+  min-height:100vh;
+  padding: 30px 20px 60px;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+}
+
+.header {
+  margin-top: 10px;
+  text-align:center;
+  color: white;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  background-color: blue;
+  margin-top: auto;
+}
+.header h1{
+  font-family: var(--body-font);
+  font-size: var(--title-size);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  line-height:1;
+  background-color: blue;
+}
+
+button{
+  margin:10px 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 19px;
+}
+
+.info-box{
+  background: var(--overlay);
+  margin: 46px 300px;
+  border-radius: 6px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  color: var(--accent);
+  font-family: var(--body-font);
+  font-size: 1.5rem;
+  line-height: 1.45;
+  min-height: 80%; 
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.info-box h2{
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.subtitle{
+  color: rgba(27,51,80,0.9);
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+
+.footer {
+  margin-top: 18px;
+  text-align:center;
+  color: white;
+  opacity:0.95;
+  font-size:0.9rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.info-box a{
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+
+
+.content .title {
+    background-color: #003366; 
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
