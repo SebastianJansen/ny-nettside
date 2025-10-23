@@ -1,3 +1,6 @@
+:root {
+    --blue-main: #0055a4;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -80,11 +83,15 @@ main {
     background-color: #0077c9;
 }
 
+.card-background {
+    background: #ffffff;
+}
 
 footer {
-    background-color: #333;
+    background-color: var(--blue-main);
     color: #ccc;
     text-align: center;
     padding: 15px 0;
     margin-top: 30px;
+
 }
